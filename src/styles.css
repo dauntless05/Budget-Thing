@@ -1,10 +1,12 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .navbar {
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo-img{
-    height: 10%;
+    height: 50px;
 }
 
 .nav-left > h1{
@@ -36,4 +38,39 @@
     text-decoration: none;
     color: black;
     padding: 10px;
+}
+
+.graph-ui{
+    margin: auto;
+    text-align: center;
+}
+
+.graphs{
+   display: flex;
+}
+
+.savings-graph{
+    margin: 10px;
+    width: 50%;
+    margin-top: auto;
+}
+
+.expenses-graph{
+    margin: 10px;
+    width: 50%;
+}
+
+.savings-bar{
+    /* Change height % of the BARS  */
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-color: rgb(69,  183, 31);
+}
+
+.expenses-bar{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-color: red;
 }
