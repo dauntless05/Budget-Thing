@@ -7,8 +7,8 @@ export default function Navbar(){
 	           <h1 className="title">Budget Thing</h1> 
 	       </div>
 	       <div className="nav-right">
-	           <h2><a href="/create">Create</a></h2>
-	           <h2><a href="/history">History</a></h2>
+	           <a href="/create">Create</a>
+	           <a href="/history">History</a>
 	       </div> 
         </div>
     )

@@ -1,5 +1,4 @@
-
-export default function Graph_UI(){
+export default function GraphUI(){
     return(
         <div className="graph-ui">
             <div className="graph-title">

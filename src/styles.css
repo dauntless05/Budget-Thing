@@ -1,8 +1,14 @@
 html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.myPage{
+    display: flex;
+}
+
 .navbar {
     display: flex;
+    padding: 5px;
 }
 
 .logo-img{
@@ -34,13 +40,21 @@ html{
     margin-left: auto;
 }
 
-.nav-right > h2 > a{
+/* .nav-right > h2{ */
+/*     margin: 0px; */
+/*     align-items: center; */
+/* } */
+
+.nav-right > a{
     text-decoration: none;
     color: black;
     padding: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .graph-ui{
+    /* position: absolute; */
     margin: auto;
     text-align: center;
 }
@@ -58,19 +72,131 @@ html{
 .expenses-graph{
     margin: 10px;
     width: 50%;
+    margin-top: auto;
 }
 
 .savings-bar{
     /* Change height % of the BARS  */
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 120px;
     margin: auto;
     background-color: rgb(69,  183, 31);
 }
 
 .expenses-bar{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 120px;
     margin: auto;
     background-color: red;
+}
+
+.left-pane{
+    display: block;
+    margin: auto;
+}
+
+.budget-input{
+    margin: 40px;
+    text-align: center;
+    background-color: rgb(186, 220, 253);
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+
+.budget-input > h3{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.budget-inp {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.budget-inp-submit {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.expenses-input{
+    margin: 40px;
+    text-align: center;
+    background-color: rgb(186, 220, 253);
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+
+.expenses-input > h3{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.expenses-inp {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.expenses-inp-submit {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-budget{
+    margin-left: 40px;
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    /* margin: 8px 0; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* .right-pane{ */
+/*     margin: auto; */
+/* } */
+
+.right-pane {
+    width: 640px; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.expense-list{
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.expense-list-title{
+    margin: 5px auto 5px 5px;
+}
+
+.expense-list-cost{
+    margin: 5px 5px 5px 5px;
+    color: red;
 }
